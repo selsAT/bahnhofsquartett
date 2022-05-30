@@ -63,8 +63,7 @@ function findImage(station) {
       fs.writeFileSync(metadataPath, JSON.stringify(metadata));
 
       console.log('Fetching image from %s', url);
-//      let imageUrl = $('.fullImageLink a').attr('href');
-      let imageUrl = $('.fullImageLink img').attr('src');
+      let imageUrl = $('.fullImageLink a').attr('href');
       request(imageUrl, { encoding: null }, function (error, res, buffer) {
         if (error || res.statusCode !== 200) {
           console.log('Imagelink is %s Status is %s', imageUrl, res.statusCode);
