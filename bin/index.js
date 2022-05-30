@@ -112,12 +112,11 @@ async.eachLimit(cards, 1, (station, cardDone) => {
 
   pdf.add(card).then(cardDone)
   .catch((err) => {
-    console.error(err);
+    console.log(err);
     cardDone(err);
   });
   i++;
 }, function () {
   pdf.end();
   pdf.doc.pipe(fs.createWriteStream(pr(DEST_DIR, 'output.pdf')));
-  console.log('did we get here?');
 });
