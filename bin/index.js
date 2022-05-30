@@ -119,4 +119,5 @@ async.eachLimit(cards, 1, (station, cardDone) => {
 }, function () {
   pdf.end();
   pdf.doc.pipe(fs.createWriteStream(pr(DEST_DIR, 'output.pdf')));
+  console.log('did we get here?');
 });
