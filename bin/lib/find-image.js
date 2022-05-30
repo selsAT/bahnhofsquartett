@@ -66,7 +66,7 @@ function findImage(station) {
       let imageUrl = $('.fullImageLink a').attr('href');
       request(imageUrl, { encoding: null }, function (error, res, buffer) {
         if (error || res.statusCode !== 200) {
-          console.log('Status is %s', res.statusCode);
+          console.log('Imagelink is %s. Status is %s', imageUrl, res.statusCode);
           return reject(error);
         }
         console.log('Fetched image from %s', url);
