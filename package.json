@@ -9,15 +9,15 @@
   },
   "author": "Philipp Bock <p@philippbock.de> (http://philippbock.de/)",
   "license": "MIT",
-  "dependencies": {
-    "uuid": "8.3.2",
-    "async": "^1.5.0",
-    "cheerio": "^0.22.0",
-    "image-size": "^0.4.0",
-    "js-yaml": "^3.4.6",
-    "lodash": "^4.17.15",
-    "pdfkit": "^0.7.1",
-    "request": "2.88.2",
-    "slug": "^0.9.1"
-  }
+//  "dependencies": {
+//    "uuid": "8.3.2",
+//    "async": "^1.5.0",
+//    "cheerio": "^0.22.0",
+//    "image-size": "^0.4.0",
+//    "js-yaml": "^3.4.6",
+//    "lodash": "^4.17.15",
+//    "pdfkit": "^0.7.1",
+//    "request": "2.88.2",
+//    "slug": "^0.9.1"
+//  }
 }
