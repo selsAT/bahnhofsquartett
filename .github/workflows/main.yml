@@ -28,5 +28,5 @@ jobs:
       - run: npm install
 #      - run: npm ci
       - run: npm run build
-      - run: ls -al dest/
+      - run: ls -al dist/
 #      - run: npm test
